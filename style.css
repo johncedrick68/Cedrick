@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
 
-/* =========================================
-   DESIGN TOKENS
-   ========================================= */
 :root {
   --bg:          #0F172A;
   --surface:     #1E293B;
@@ -26,9 +23,6 @@
   --ease-m: 0.35s ease;
 }
 
-/* =========================================
-   RESET
-   ========================================= */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
 html { scroll-behavior: smooth; }
@@ -42,7 +36,7 @@ body {
   background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  /* Cursor spotlight */
+  
   cursor: default;
 }
 
@@ -51,9 +45,6 @@ img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
 button { cursor: pointer; border: none; background: none; font-family: var(--font); }
 
-/* =========================================
-   CURSOR SPOTLIGHT
-   ========================================= */
 #spotlight {
   position: fixed;
   inset: 0;
@@ -63,9 +54,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   transition: background 0.05s;
 }
 
-/* =========================================
-   TWO-PANEL LAYOUT
-   ========================================= */
 .layout {
   display: flex;
   min-height: 100vh;
@@ -77,7 +65,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   z-index: 1;
 }
 
-/* LEFT — sticky sidebar */
 .sidebar {
   width: 45%;
   max-width: 480px;
@@ -92,16 +79,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   flex-shrink: 0;
 }
 
-/* RIGHT — scrollable main */
 .content {
   flex: 1;
   min-width: 0;
   padding: 80px 0 80px 48px;
 }
 
-/* =========================================
-   SIDEBAR CONTENT
-   ========================================= */
 .sidebar-top {}
 
 .site-name {
@@ -127,7 +110,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   max-width: 300px;
 }
 
-/* Sidebar nav */
 .sidebar-nav {
   margin-top: 48px;
   display: flex;
@@ -168,7 +150,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   background-color: var(--heading);
 }
 
-/* Sidebar socials */
 .sidebar-socials {
   display: flex;
   align-items: center;
@@ -188,16 +169,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   transform: translateY(-2px);
 }
 
-/* =========================================
-   SECTION STYLES (Right Panel)
-   ========================================= */
 .section {
   padding-bottom: 80px;
 }
 
-/* Mobile section label */
 .section-eyebrow {
-  display: none; /* hidden on desktop — nav handles it */
+  display: none; 
   font-family: var(--mono);
   font-size: 12px;
   font-weight: 400;
@@ -207,9 +184,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   margin-bottom: 24px;
 }
 
-/* =========================================
-   ABOUT
-   ========================================= */
 .about-body p {
   font-size: 15px;
   color: var(--body);
@@ -250,9 +224,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   flex-shrink: 0;
 }
 
-/* =========================================
-   EXPERIENCE CARDS (Brittany-style hover)
-   ========================================= */
 .exp-list:hover .exp-card { opacity: 0.4; }
 .exp-list:hover .exp-card:hover { opacity: 1; }
 
@@ -336,7 +307,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   white-space: nowrap;
 }
 
-/* Resume link */
 .resume-link {
   display: inline-flex;
   align-items: center;
@@ -356,9 +326,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   border-color: var(--teal);
 }
 
-/* =========================================
-   PROJECT CARDS (Brittany-style)
-   ========================================= */
 .project-list:hover .project-card { opacity: 0.4; }
 .project-list:hover .project-card:hover { opacity: 1; }
 
@@ -417,7 +384,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   margin-bottom: 12px;
 }
 
-/* Archive link */
 .archive-link {
   display: inline-flex;
   align-items: center;
@@ -437,9 +403,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   border-color: var(--teal);
 }
 
-/* =========================================
-   GALLERY SECTION
-   ========================================= */
 .gallery-intro {
   font-size: 14px;
   color: var(--body);
@@ -495,9 +458,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   line-height: 1.3;
 }
 
-/* =========================================
-   LIGHTBOX
-   ========================================= */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -574,9 +534,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   white-space: nowrap;
 }
 
-/* =========================================
-   CONTACT
-   ========================================= */
 .contact-eyebrow {
   font-family: var(--mono);
   font-size: 13px;
@@ -623,9 +580,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   box-shadow: 0 0 0 4px var(--teal-10);
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
 .footer {
   padding-top: 40px;
   border-top: 1px solid var(--border);
@@ -641,9 +595,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .footer a { color: var(--teal); transition: color var(--ease); }
 .footer a:hover { color: var(--cyan); }
 
-/* =========================================
-   MOBILE NAV
-   ========================================= */
 .mobile-header {
   display: none;
   position: sticky;
@@ -718,9 +669,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .mobile-nav-link:last-child { border-bottom: none; }
 .mobile-nav-link:hover { color: var(--teal); }
 
-/* =========================================
-   SCROLL REVEAL
-   ========================================= */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -729,9 +677,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .reveal.in { opacity: 1; transform: translateY(0); }
 
-/* =========================================
-   RESPONSIVE
-   ========================================= */
 @media (max-width: 900px) {
   .layout {
     flex-direction: column;
