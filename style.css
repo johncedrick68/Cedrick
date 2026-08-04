@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400&display=swap');
 
 :root {
   --bg:          #0F172A;
@@ -47,6 +46,24 @@ button, a:focus-visible { cursor: pointer; }
 button { border: none; background: none; font-family: var(--font); }
 button:focus-visible, a:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
 button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 2000;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #0F172A;
+  background: var(--teal);
+  font-weight: 700;
+  transform: translateY(-160%);
+  transition: transform var(--ease);
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+.mobile-hero-card { display: none; }
 
 #spotlight {
   position: fixed;
@@ -109,8 +126,16 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
   font-size: clamp(13px, 1.4vw, 16px);
   font-weight: 700;
   color: var(--heading);
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   line-height: 1.4;
+}
+
+.site-specialty {
+  margin-bottom: 12px;
+  color: var(--teal);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
 }
 
 .site-tagline {
@@ -228,6 +253,34 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
 
 .about-body strong, .about-body .hl { color: var(--heading); font-weight: 700; }
 
+.profile-snapshot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 26px 0 24px;
+}
+
+.profile-snapshot div {
+  padding: 14px;
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  background: rgba(30, 41, 59, 0.42);
+}
+
+.profile-snapshot dt {
+  color: var(--teal);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.profile-snapshot dd {
+  color: var(--body);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .tech-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -249,6 +302,17 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
   color: var(--teal);
   font-size: 11px;
   flex-shrink: 0;
+}
+
+.education-list { margin-top: 48px; }
+
+.subsection-label {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .exp-list:hover .exp-card { opacity: 0.4; }
@@ -360,7 +424,7 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
 
 .project-card {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 156px 1fr;
   gap: 20px;
   padding: 20px 22px;
   border-radius: 8px;
@@ -375,13 +439,46 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
 }
 
 .project-thumb {
-  width: 120px;
-  height: 80px;
+  width: 156px;
+  height: 104px;
   object-fit: cover;
   border-radius: 4px;
   border: 1px solid var(--border-2);
   flex-shrink: 0;
 }
+
+.project-section-intro { max-width: 620px; }
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.project-status.live { color: var(--teal); }
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.project-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--heading);
+  font-size: 12px;
+  font-weight: 700;
+  transition: color var(--ease), gap var(--ease);
+}
+
+.project-live-link:hover { color: var(--teal); gap: 8px; }
 
 .project-body {}
 
@@ -849,9 +946,14 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
     margin-bottom: 18px;
   }
 
-  /* Mobile hero intro removed because the sidebar already provides the main intro */
   .mobile-hero-card {
-    display: none !important;
+    display: block;
+    margin-bottom: 56px;
+    padding: 24px;
+    border: 1px solid var(--border-2);
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.82), rgba(15, 23, 42, 0.95));
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
   }
 
   .mobile-hero-kicker {
@@ -878,6 +980,8 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
     margin-bottom: 10px;
     line-height: 1.5;
   }
+
+  .mobile-hero-role span { color: var(--teal); }
 
   .mobile-hero-copy {
     font-size: 14px;
@@ -920,14 +1024,22 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
 
   .content {
     padding: 20px 14px 72px;
+    width: 100%;
+    min-width: 0;
   }
+
+  .layout,
+  .section,
+  .mobile-hero-card { width: 100%; min-width: 0; max-width: 100%; }
 
   .section {
     padding-bottom: 56px;
   }
 
   .mobile-hero-card {
-    display: none !important;
+    display: block;
+    margin-bottom: 48px;
+    padding: 20px;
   }
 
   .mobile-hero-title {
@@ -989,7 +1101,7 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
     grid-template-columns: 1fr;
     gap: 12px;
     padding: 16px 14px;
-    margin: 0 -4px;
+    margin: 0 0 12px;
   }
 
   .project-header-row {
@@ -999,6 +1111,19 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
   }
 
   .project-thumb { width: 100%; height: 170px; }
+
+  .profile-snapshot { grid-template-columns: 1fr; gap: 8px; }
+
+  .profile-snapshot div {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: center;
+    padding: 12px 14px;
+  }
+
+  .profile-snapshot dt { margin-bottom: 0; }
+
+  .project-actions { flex-wrap: wrap; }
 
   .exp-date { font-size: 10px; }
 
@@ -1330,6 +1455,11 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
   gap: 16px;
 }
 
+.section-toggle-wrap {
+  margin-top: 24px;
+  text-align: center;
+}
+
 .cert-card {
   display: flex;
   align-items: flex-start;
@@ -1586,6 +1716,14 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
   box-shadow: 0 12px 32px rgba(45, 212, 191, 0.15);
 }
 
+.contact-email-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
 .email-card-icon {
   width: 48px;
   height: 48px;
@@ -1687,6 +1825,11 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
       text-align: center;
     }
 
+    .contact-email-link {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .email-copy-badge {
       margin: 0 auto;
     }
@@ -1741,6 +1884,19 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
 
 .modal-backdrop.open .modal-box {
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  #spotlight { display: none; }
 }
 
 .modal-close-btn {
@@ -1857,4 +2013,3 @@ button:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
     padding: 20px;
   }
 }
-
