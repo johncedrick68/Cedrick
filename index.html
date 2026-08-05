@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" data-theme="system">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Cedrick Libradilla | IT Support &amp; Network Technician</title>
-  <meta name="description"
-    content="Portfolio of John Cedrick Libradilla, an IT support and network technician in Cebu with hands-on experience in troubleshooting, Cisco networking, and full-stack web development." />
-  <meta name="author" content="John Cedrick Libradilla" />
-  <meta property="og:title" content="John Cedrick Libradilla | IT Support &amp; Network Technician" />
-  <meta property="og:description"
-    content="Building reliable web experiences and practical IT solutions at the intersection of support, networking, and development." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://portfolio-cedrick.vercel.app/" />
-  <meta property="og:image" content="https://portfolio-cedrick.vercel.app/assets/PASAHERO.webp" />
-  <meta property="og:image:width" content="1254" />
-  <meta property="og:image:height" content="1254" />
-  <meta property="og:image:alt" content="PasaHERO navigation platform featured in John Cedrick Libradilla's portfolio" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="John Cedrick Libradilla | IT Support &amp; Network Technician" />
-  <meta name="twitter:description" content="Hands-on IT support and networking portfolio featuring deployed web projects, Cisco credentials, and practical technical work." />
-  <meta name="twitter:image" content="https://portfolio-cedrick.vercel.app/assets/PASAHERO.webp" />
-  <meta name="theme-color" content="#0F172A" />
-  <link rel="canonical" href="https://portfolio-cedrick.vercel.app/" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="alternate icon" href="favicon.svg" />
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Cedrick Libradilla — IT Infrastructure &amp; Software</title>
+  <meta name="description" content="Portfolio of John Cedrick Libradilla, a Cebu-based IT practitioner building reliable networks, support systems, and practical web software.">
+  <meta name="author" content="John Cedrick Libradilla">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0c0f" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="John Cedrick Libradilla — IT Infrastructure &amp; Software">
+  <meta property="og:description" content="Reliable networks, practical software, and hands-on technical support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio-cedrick.vercel.app/">
+  <meta property="og:image" content="https://portfolio-cedrick.vercel.app/assets/PASAHERO.webp">
+  <meta property="og:image:alt" content="PasaHERO navigation platform featured in John Cedrick Libradilla's portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://portfolio-cedrick.vercel.app/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      document.documentElement.classList.add('js');
+      const saved = localStorage.getItem('portfolio-theme') || 'system';
+      document.documentElement.dataset.theme = saved;
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,16 +38,12 @@
           "name": "John Cedrick Libradilla",
           "url": "https://portfolio-cedrick.vercel.app/",
           "email": "mailto:johncedricklibradilla@gmail.com",
-          "telephone": "+63 956 075 7817",
           "jobTitle": ["IT Support Specialist", "Network Technician", "Full-Stack Web Developer"],
           "sameAs": [
             "https://github.com/johncedrick68",
             "https://www.linkedin.com/in/john-cedrick-libradilla-1b2265426/"
           ],
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "University of Cebu"
-          },
+          "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of Cebu"},
           "knowsAbout": ["IT Support", "Computer Networking", "Cisco IOS", "React", "Next.js", "Node.js", "TypeScript", "MySQL"]
         },
         {
@@ -58,1356 +51,395 @@
           "@id": "https://portfolio-cedrick.vercel.app/#website",
           "url": "https://portfolio-cedrick.vercel.app/",
           "name": "John Cedrick Libradilla Portfolio",
-          "author": { "@id": "https://portfolio-cedrick.vercel.app/#person" }
+          "author": {"@id": "https://portfolio-cedrick.vercel.app/#person"}
         }
       ]
     }
   </script>
 </head>
-
 <body>
-
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
 
-  <div id="spotlight" aria-hidden="true"></div>
-
-  <header class="mobile-header" id="mobile-header">
-    <div class="mobile-nav-inner">
-      <a href="#about" class="mobile-logo" aria-label="Go to top">J<span>C</span>L</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-drawer">
-        <span></span><span></span><span></span>
+  <header class="mobile-header">
+    <a class="mobile-brand" href="#top" aria-label="John Cedrick Libradilla, home">JCL</a>
+    <div class="mobile-actions">
+      <button class="command-trigger command-trigger-mobile" type="button" data-command-open aria-label="Open quick navigator">⌘K</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span>menu</span><span aria-hidden="true">+</span>
       </button>
     </div>
-    <nav class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
-      <div class="mobile-nav-links">
-        <a href="#about" class="mobile-nav-link">About</a>
-        <a href="#work" class="mobile-nav-link">Projects</a>
-        <a href="#experience" class="mobile-nav-link">Experience</a>
-        <a href="#certifications" class="mobile-nav-link">Certifications</a>
-        <a href="#networking-lab" class="mobile-nav-link">Networking Lab</a>
-        <a href="#skills" class="mobile-nav-link">Skills</a>
-        <a href="#gallery" class="mobile-nav-link">Graphic Design Portfolio</a>
-        <a href="#contact" class="mobile-nav-link">Contact</a>
-        <a href="John_Cedrick_Libradilla_Resume%202.pdf" target="_blank" rel="noopener noreferrer" class="mobile-resume-link">
-          <i class="uil uil-file-download-alt"></i> Download Résumé
-        </a>
-      </div>
-      <div class="mobile-nav-socials">
-        <a href="https://github.com/johncedrick68" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="uil uil-github"></i></a>
-        <a href="https://www.linkedin.com/in/john-cedrick-libradilla-1b2265426/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="uil uil-linkedin"></i></a>
-        <a href="mailto:johncedricklibradilla@gmail.com?subject=Portfolio%20Inquiry%20-%20John%20Cedrick%20Libradilla" aria-label="Email"><i class="uil uil-envelope"></i></a>
-        <a href="https://www.facebook.com/Sedrik2004" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="uil uil-facebook"></i></a>
-      </div>
-    </nav>
   </header>
 
-  <div class="layout">
-
-    <aside class="sidebar" aria-label="Site identity and navigation">
-      <div class="sidebar-top">
-        <h1 class="site-name">John Cedrick<br>Libradilla</h1>
-        <p class="site-role">IT Support &amp; Network Technician</p>
-        <p class="site-specialty">Full-Stack Web Development</p>
-        <p class="site-tagline">
-          I troubleshoot systems, configure reliable networks, and build practical web tools that solve real problems.
-        </p>
-
-        <div class="hero-cta">
-          <a href="#work" class="btn-hero-primary">View Projects <i class="uil uil-arrow-down"></i></a>
-          <a href="John_Cedrick_Libradilla_Resume%202.pdf" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary">
-            <i class="uil uil-file-download-alt"></i> Download Résumé
-          </a>
-        </div>
-
-        <nav class="sidebar-nav" aria-label="Section navigation">
-          <a href="#about" class="sidebar-nav-link" data-section="about">
-            <span class="sidebar-nav-line"></span>About
-          </a>
-          <a href="#work" class="sidebar-nav-link" data-section="work">
-            <span class="sidebar-nav-line"></span>Projects
-          </a>
-          <a href="#experience" class="sidebar-nav-link" data-section="experience">
-            <span class="sidebar-nav-line"></span>Experience
-          </a>
-          <a href="#certifications" class="sidebar-nav-link" data-section="certifications">
-            <span class="sidebar-nav-line"></span>Certifications
-          </a>
-          <a href="#networking-lab" class="sidebar-nav-link" data-section="networking-lab">
-            <span class="sidebar-nav-line"></span>Networking Lab
-          </a>
-          <a href="#skills" class="sidebar-nav-link" data-section="skills">
-            <span class="sidebar-nav-line"></span>Skills
-          </a>
-          <a href="#gallery" class="sidebar-nav-link" data-section="gallery">
-            <span class="sidebar-nav-line"></span>Graphic Design Portfolio
-          </a>
-          <a href="#contact" class="sidebar-nav-link" data-section="contact">
-            <span class="sidebar-nav-line"></span>Contact
-          </a>
-        </nav>
-      </div>
-
-      <div class="sidebar-socials" role="list" aria-label="Social links">
-        <a href="https://github.com/johncedrick68" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="GitHub">
-          <i class="uil uil-github" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/john-cedrick-libradilla-1b2265426/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="LinkedIn">
-          <i class="uil uil-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="mailto:johncedricklibradilla@gmail.com?subject=Portfolio%20Inquiry%20-%20John%20Cedrick%20Libradilla" role="listitem" aria-label="Email">
-          <i class="uil uil-envelope" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.facebook.com/Sedrik2004" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Facebook">
-          <i class="uil uil-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61576723666560" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Design portfolio">
-          <i class="uil uil-palette" aria-hidden="true"></i>
-        </a>
-      </div>
-    </aside>
-
-    <main class="content" id="main-content">
-
-      <section class="mobile-hero-card" aria-label="Introduction">
-        <p class="mobile-hero-kicker">Cebu, Philippines</p>
-        <p class="mobile-hero-title">John Cedrick Libradilla</p>
-        <p class="mobile-hero-role">IT Support &amp; Network Technician <span>with Full-Stack Development skills</span></p>
-        <p class="mobile-hero-copy">I troubleshoot systems, configure reliable networks, and build practical web tools that solve real problems.</p>
-        <div class="hero-cta mobile-hero-cta">
-          <a href="#work" class="btn-hero-primary">View Projects <i class="uil uil-arrow-down"></i></a>
-          <a href="John_Cedrick_Libradilla_Resume%202.pdf" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary">
-            <i class="uil uil-file-download-alt"></i> View Résumé
-          </a>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="section reveal" id="about" aria-labelledby="about-heading">
-        <span class="section-eyebrow" id="about-heading" role="heading" aria-level="2">About</span>
-
-        <div class="about-body">
-          <p>
-            I’m a <span class="hl">BS Information Technology student</span> from Cebu focused on <span class="hl">IT support and computer networking</span>. I diagnose hardware and software issues, configure networks, and use full-stack development to turn practical needs into working tools.
-          </p>
-          <p>
-            My approach is straightforward: understand the problem, build a reliable solution, and verify that it works in practice. At the <span class="hl">University of Cebu</span>, I’m strengthening that foundation through Cisco networking, systems support, and application development.
-          </p>
-
-          <dl class="profile-snapshot" aria-label="Portfolio highlights">
-            <div><dt>Since 2021</dt><dd>Hands-on IT support</dd></div>
-            <div><dt>7 credentials</dt><dd>Networking &amp; cybersecurity</dd></div>
-            <div><dt>2 live builds</dt><dd>Deployed web experiences</dd></div>
-          </dl>
-
-          <ul class="tech-grid" aria-label="Core competencies">
-            <li>Networking &amp; Cisco Packet Tracer</li>
-            <li>Hardware Diagnostics &amp; OS Administration</li>
-            <li>React / Next.js / TypeScript</li>
-            <li>Node.js / Express / REST APIs</li>
-            <li>MySQL / MongoDB / Sequelize ORM</li>
-            <li>IT Troubleshooting &amp; Maintenance</li>
-            <li>VLANs / TCP/IP / Subnetting</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Projects Section & Case Studies -->
-      <section class="section reveal" id="work" aria-labelledby="work-heading">
-        <span class="section-eyebrow" id="work-heading" role="heading" aria-level="2">Selected Work</span>
-        <p class="section-intro-text project-section-intro">A focused selection of systems I have designed and built, including the decisions, responsibilities, and technologies behind each one.</p>
-
-        <div class="project-list">
-
-          <article class="project-card interactive-project-card" data-case-study="pasahero">
-            <img src="assets/PASAHERO.webp" alt="PasaHERO navigation platform interface" class="project-thumb" width="1254" height="1254"
-              style="background-color: white; object-fit: contain;" loading="lazy" decoding="async" />
-            <div class="project-body">
-              <div class="project-header-row">
-                <span class="flagship-badge">Flagship Project</span>
-                <span class="project-status">Capstone · In development</span>
-              </div>
-              <h2 class="project-title">
-                PasaHERO — AI-Assisted Multimodal Navigation
-              </h2>
-              <p class="project-desc">
-                Built a practical route-planning experience for Cebu City commuters, combining fare analysis, transfer logic, and map-based guidance to make everyday transit decisions easier.
-              </p>
-              <ul class="tag-list">
-                <li class="tag">React</li>
-                <li class="tag">Node.js</li>
-                <li class="tag">Express.js</li>
-                <li class="tag">MySQL</li>
-                <li class="tag">Mapbox GL JS</li>
-                <li class="tag">Tailwind CSS</li>
-                <li class="tag">AI Engine</li>
-              </ul>
-              <div class="project-actions">
-                <button class="case-study-trigger-btn" type="button" aria-label="View PasaHERO case study" data-case-study="pasahero">Case Study <i class="uil uil-arrow-right"></i></button>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card interactive-project-card" data-case-study="ltoreviewer">
-            <img src="assets/bettergovfeaturesreviewer.webp" alt="LTO Reviewer quiz application" class="project-thumb" width="2048" height="1817"
-              loading="lazy" decoding="async" />
-            <div class="project-body">
-              <div class="project-header-row">
-                <span class="project-status live"><i class="uil uil-check-circle"></i> Live application</span>
-              </div>
-              <h2 class="project-title">
-                LTO Reviewer — Quiz Master
-              </h2>
-              <p class="project-desc">
-                Designed a quiz-focused study platform for Philippine LTO preparation with instant feedback, mobile-friendly interactions, and a clear learning flow.
-              </p>
-              <ul class="tag-list">
-                <li class="tag">Next.js 15</li>
-                <li class="tag">React 18</li>
-                <li class="tag">TypeScript</li>
-                <li class="tag">Tailwind CSS 4</li>
-                <li class="tag">API Routes</li>
-                <li class="tag">Playwright</li>
-              </ul>
-              <div class="project-actions">
-                <button class="case-study-trigger-btn" type="button" aria-label="View LTO Reviewer case study" data-case-study="ltoreviewer">Case Study <i class="uil uil-arrow-right"></i></button>
-                <a href="https://quizziz-cedrick.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-live-link">Live Demo <i class="uil uil-external-link-alt"></i></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card interactive-project-card" data-case-study="1968clothing">
-            <img src="assets/1968 CLOTHING LANDING PAGE.webp" alt="1968 Clothing landing page design" width="1890" height="913"
-              class="project-thumb" loading="lazy" decoding="async" />
-            <div class="project-body">
-              <div class="project-header-row">
-                <span class="project-status live"><i class="uil uil-check-circle"></i> Live experience</span>
-              </div>
-              <h2 class="project-title">
-                1968 Clothing E-Commerce Landing
-              </h2>
-              <p class="project-desc">
-                Delivered a polished e-commerce landing experience for a streetwear brand with a strong visual hierarchy, responsive layout, and product-focused storytelling.
-              </p>
-              <ul class="tag-list">
-                <li class="tag">HTML5</li>
-                <li class="tag">CSS3</li>
-                <li class="tag">Vanilla JavaScript</li>
-                <li class="tag">Local JSON</li>
-                <li class="tag">Vercel</li>
-              </ul>
-              <div class="project-actions">
-                <button class="case-study-trigger-btn" type="button" aria-label="View 1968 Clothing case study" data-case-study="1968clothing">Case Study <i class="uil uil-arrow-right"></i></button>
-                <a href="https://1968-clothing.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-live-link">Live Demo <i class="uil uil-external-link-alt"></i></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card interactive-project-card" data-case-study="freelancedesign">
-            <img src="assets/SAN ROQUE GRADUATION POSTER 2026.webp" alt="Freelance design portfolio sample" width="1080" height="1350"
-              class="project-thumb" loading="lazy" decoding="async" />
-            <div class="project-body">
-              <div class="project-header-row">
-                <span class="project-status">Client work</span>
-              </div>
-              <h2 class="project-title">
-                Freelance Graphic Design Showcase
-              </h2>
-              <p class="project-desc">
-                Produced client-facing design assets for local organizations, helping turn ideas into polished marketing materials with clear communication and strong visual impact.
-              </p>
-              <ul class="tag-list">
-                <li class="tag">Adobe Photoshop</li>
-                <li class="tag">Canva</li>
-                <li class="tag">Figma</li>
-                <li class="tag">Print Design</li>
-              </ul>
-              <div class="project-actions">
-                <button class="case-study-trigger-btn" type="button" aria-label="View freelance design case study" data-case-study="freelancedesign">Case Study <i class="uil uil-arrow-right"></i></button>
-                <a href="https://www.facebook.com/profile.php?id=61576723666560" target="_blank" rel="noopener noreferrer" class="project-live-link">Design Page <i class="uil uil-external-link-alt"></i></a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-
-        <a href="#gallery" class="archive-link" aria-label="View full graphic design portfolio">
-          View Full Graphic Design Portfolio
-          <i class="uil uil-arrow-right" aria-hidden="true"></i>
-        </a>
-      </section>
-
-      <!-- Experience & Education Section -->
-      <section class="section reveal" id="experience" aria-labelledby="exp-heading">
-        <span class="section-eyebrow" id="exp-heading" role="heading" aria-level="2">Experience</span>
-
-        <div class="exp-list">
-          <article class="exp-card">
-            <div class="exp-date">2025 — Present</div>
-            <div class="exp-body">
-              <h2 class="exp-title">Software Developer (Capstone Project) — PasaHERO</h2>
-              <p class="exp-subtitle">University of Cebu</p>
-              <p class="exp-desc">Leading the development of <strong>PasaHERO</strong>, an AI-assisted multimodal commute platform focused on improving everyday travel decisions in Cebu City. Built a route recommendation engine using fare analytics, walking distance, and transfer logic, while contributing to the architecture, database, and interactive interface.</p>
-              <ul class="tag-list" aria-label="Technologies used">
-                <li class="tag">React</li>
-                <li class="tag">Node.js</li>
-                <li class="tag">Express.js</li>
-                <li class="tag">MySQL</li>
-                <li class="tag">Mapbox GL JS</li>
-                <li class="tag">Tailwind CSS</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="exp-card">
-            <div class="exp-date">2024 — Present</div>
-            <div class="exp-body">
-              <h2 class="exp-title">Student Volunteer</h2>
-              <p class="exp-subtitle">University of Cebu – CCS CARES</p>
-              <p class="exp-desc">Supporting community extension programs that promote digital literacy. Conducted Microsoft Word and Excel training, provided computer troubleshooting during outreach activities, and participated in the CLICK Computer Literacy Program at Barangay Hipodromo.</p>
-              <ul class="tag-list" aria-label="Volunteer skills used">
-                <li class="tag">Digital Literacy</li>
-                <li class="tag">Microsoft Office</li>
-                <li class="tag">IT Support</li>
-                <li class="tag">Community Outreach</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="exp-card">
-            <div class="exp-date">2023 — Present</div>
-            <div class="exp-body">
-              <h2 class="exp-title">Freelance Web Developer, IT Support &amp; Graphic Designer</h2>
-              <p class="exp-subtitle">Self-employed · Cebu, Philippines</p>
-              <p class="exp-desc">Delivering responsive websites, practical IT support, and print-ready visual assets for startups, local businesses, and community organizations while managing client communication and deadlines.</p>
-              <ul class="tag-list" aria-label="Skills used">
-                <li class="tag">HTML / CSS / JS</li>
-                <li class="tag">React</li>
-                <li class="tag">IT Support</li>
-                <li class="tag">Figma</li>
-                <li class="tag">Photoshop</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="exp-card">
-            <div class="exp-date">2021 — Present</div>
-            <div class="exp-body">
-              <h2 class="exp-title">Freelance IT Support &amp; Computer Technician</h2>
-              <p class="exp-subtitle">Self-employed · Cebu, Philippines</p>
-              <p class="exp-desc">Providing hardware and software diagnostics, PC assembly, Windows optimization, LAN and router configuration, printer sharing, and preventive maintenance for desktop and laptop environments.</p>
-              <ul class="tag-list" aria-label="Skills used">
-                <li class="tag">Hardware Repair</li>
-                <li class="tag">Windows Administration</li>
-                <li class="tag">LAN Configuration</li>
-                <li class="tag">PC Maintenance</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-
-        <div class="exp-list education-list">
-          <p class="subsection-label">Education &amp; Academic Focus</p>
-          <article class="exp-card">
-            <div class="exp-date">2023 — Jun 2027</div>
-            <div class="exp-body">
-              <h2 class="exp-title">Bachelor of Science in Information Technology</h2>
-              <p class="exp-subtitle">University of Cebu · Expected Graduation: June 2027</p>
-            </div>
-          </article>
-          <article class="exp-card">
-            <div class="exp-date">Batch 2023</div>
-            <div class="exp-body">
-              <h2 class="exp-title">TVL – Computer Systems Servicing (CSS)</h2>
-              <p class="exp-subtitle">University of Cebu · Senior High School</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Certifications -->
-      <section class="section reveal" id="certifications" aria-labelledby="certifications-heading">
-        <span class="section-eyebrow" id="certifications-heading" role="heading" aria-level="2">Certifications &amp; Credentials</span>
-        
-        <p class="section-intro-text">
-          A growing set of technical credentials that support my focus in networking, infrastructure support, and practical software development.
-        </p>
-
-        <!-- Credly Embedded Badges Grid -->
-        <div class="credly-badges-wrapper">
-          <h3 class="subsection-title"><i class="uil uil-award"></i> Verified Credly Badges</h3>
-          <div class="credly-grid">
-            <div class="credly-item">
-              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bf694b14-e520-4670-84f9-e9260ba04178" data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="credly-item">
-              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1af3b870-237e-4a38-a524-8dcd860fb9a7" data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="credly-item">
-              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2c165b27-5b2a-4fdf-acdf-fac97d730c85" data-share-badge-host="https://www.credly.com"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Additional Certified Courses & Official PDF Certificates -->
-        <div class="cert-cards-grid" id="certification-grid">
-          <div class="cert-card">
-            <div class="cert-icon" title="Cisco Systems">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#2DD4BF" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5v3h1.5v-3H3zm3-4.5v7.5h1.5V9H6zm3-4.5v12h1.5V4.5H9zm3-3v15h1.5V1.5H12zm3 3v12h1.5V4.5H15zm3 4.5v7.5h1.5V9H18zm3 4.5v3h1.5v-3H21z"/></svg>
-            </div>
-            <div class="cert-info">
-              <h4 class="cert-name">CCNA: Introduction to Networks</h4>
-              <p class="cert-issuer">Cisco Networking Academy</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Networking &amp; Protocols</span>
-                <a href="assets/certificates/CCNA_Introduction_to_Networks.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View CCNA Certificate PDF">
-                  View PDF <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-icon" title="Cisco Systems">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#2DD4BF" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5v3h1.5v-3H3zm3-4.5v7.5h1.5V9H6zm3-4.5v12h1.5V4.5H9zm3-3v15h1.5V1.5H12zm3 3v12h1.5V4.5H15zm3 4.5v7.5h1.5V9H18zm3 4.5v3h1.5v-3H21z"/></svg>
-            </div>
-            <div class="cert-info">
-              <h4 class="cert-name">Networking Essentials</h4>
-              <p class="cert-issuer">Cisco Networking Academy</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Infrastructure</span>
-                <a href="assets/certificates/Networking_Essentials.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View Networking Essentials Certificate PDF">
-                  View PDF <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-icon" title="Cisco Systems">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#2DD4BF" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5v3h1.5v-3H3zm3-4.5v7.5h1.5V9H6zm3-4.5v12h1.5V4.5H9zm3-3v15h1.5V1.5H12zm3 3v12h1.5V4.5H15zm3 4.5v7.5h1.5V9H18zm3 4.5v3h1.5v-3H21z"/></svg>
-            </div>
-            <div class="cert-info">
-              <h4 class="cert-name">Cybersecurity Essentials</h4>
-              <p class="cert-issuer">Cisco Networking Academy</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Security &amp; Firewalls</span>
-                <a href="assets/certificates/Cybersecurity_Essentials.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View Cybersecurity Essentials Certificate PDF">
-                  View PDF <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card cert-extra" hidden>
-            <div class="cert-icon" title="Cisco Systems">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#2DD4BF" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5v3h1.5v-3H3zm3-4.5v7.5h1.5V9H6zm3-4.5v12h1.5V4.5H9zm3-3v15h1.5V1.5H12zm3 3v12h1.5V4.5H15zm3 4.5v7.5h1.5V9H18zm3 4.5v3h1.5v-3H21z"/></svg>
-            </div>
-            <div class="cert-info">
-              <h4 class="cert-name">Introduction to Cybersecurity</h4>
-              <p class="cert-issuer">Cisco Networking Academy</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Cyber Defense</span>
-                <a href="assets/certificates/Introduction_to_Cybersecurity.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View Intro to Cybersecurity Certificate PDF">
-                  View PDF <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card cert-extra" hidden>
-            <div class="cert-icon" title="Cisco Systems">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#2DD4BF" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5v3h1.5v-3H3zm3-4.5v7.5h1.5V9H6zm3-4.5v12h1.5V4.5H9zm3-3v15h1.5V1.5H12zm3 3v12h1.5V4.5H15zm3 4.5v7.5h1.5V9H18zm3 4.5v3h1.5v-3H21z"/></svg>
-            </div>
-            <div class="cert-info">
-              <h4 class="cert-name">Introduction to Packet Tracer</h4>
-              <p class="cert-issuer">Cisco Networking Academy</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Simulation &amp; Topology</span>
-                <a href="assets/certificates/Introduction_to_Packet_Tracer.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View Packet Tracer Certificate PDF">
-                  View PDF <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card cert-extra" hidden>
-            <div class="cert-icon" title="Cisco Systems">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#2DD4BF" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5v3h1.5v-3H3zm3-4.5v7.5h1.5V9H6zm3-4.5v12h1.5V4.5H9zm3-3v15h1.5V1.5H12zm3 3v12h1.5V4.5H15zm3 4.5v7.5h1.5V9H18zm3 4.5v3h1.5v-3H21z"/></svg>
-            </div>
-            <div class="cert-info">
-              <h4 class="cert-name">NDG Linux Unhatched</h4>
-              <p class="cert-issuer">Network Development Group / Cisco</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">System Admin</span>
-                <a href="assets/certificates/NDG_Linux_Unhatched.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View Linux Certificate PDF">
-                  View PDF <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card cert-extra" hidden>
-            <div class="cert-icon" title="Cisco Systems">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#2DD4BF" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5v3h1.5v-3H3zm3-4.5v7.5h1.5V9H6zm3-4.5v12h1.5V4.5H9zm3-3v15h1.5V1.5H12zm3 3v12h1.5V4.5H15zm3 4.5v7.5h1.5V9H18zm3 4.5v3h1.5v-3H21z"/></svg>
-            </div>
-            <div class="cert-info">
-              <h4 class="cert-name">Get Connected</h4>
-              <p class="cert-issuer">Cisco Networking Academy</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Digital Literacy</span>
-                <a href="assets/certificates/Get_Connected.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View Get Connected Certificate PDF">
-                  View PDF <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card cert-extra" hidden>
-            <div class="cert-icon"><i class="uil uil-processor"></i></div>
-            <div class="cert-info">
-              <h4 class="cert-name">Computer Systems Servicing (CSS)</h4>
-              <p class="cert-issuer">Senior High School Technical Specialty</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Hardware &amp; IT Support</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card">
-            <div class="cert-icon"><i class="uil uil-trophy"></i></div>
-            <div class="cert-info">
-              <h4 class="cert-name">3rd Place – General IT Quiz Competition</h4>
-              <p class="cert-issuer">11th UC ICT Congress · 2025</p>
-              <div class="cert-footer-row">
-                <span class="cert-tag">Academic Award</span>
-                <a href="assets/certificates/3rd-place-general-it-quiz-competition.jpg" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" aria-label="View proof of the General IT Quiz Competition award">
-                  View Proof <i class="uil uil-arrow-up-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-toggle-wrap">
-          <button class="gallery-toggle-btn" id="certification-toggle-btn" type="button" aria-expanded="false" aria-controls="certification-grid">
-            <i class="uil uil-plus-circle"></i> Show All Certificates
-          </button>
-        </div>
-      </section>
-
-      <!-- Networking Lab -->
-      <section class="section reveal" id="networking-lab" aria-labelledby="networking-heading">
-        <span class="section-eyebrow" id="networking-heading" role="heading" aria-level="2">Networking Lab</span>
-
-        <p class="section-intro-text">
-          Practical networking concepts and lab-based configurations that reflect my interest in infrastructure, routing, and system reliability.
-        </p>
-
-        <div class="lab-grid">
-          
-          <div class="lab-card">
-            <div class="lab-header">
-              <i class="uil uil-sitemap lab-icon"></i>
-              <div>
-                <h3 class="lab-title">Small Office / Home Office (SOHO) LAN</h3>
-                <span class="lab-subtitle">Topology &amp; Addressing</span>
-              </div>
-            </div>
-            <p class="lab-desc">
-              Designed end-to-end LAN topologies featuring DHCP router configuration, subnetting (VLSM), switch port security, and wireless deployment.
-            </p>
-            <div class="lab-features">
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> VLSM Subnetting</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> DHCP Setup</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> WPA2/WPA3 Security</span>
-            </div>
-          </div>
-
-          <div class="lab-card">
-            <div class="lab-header">
-              <i class="uil uil-layer-group lab-icon"></i>
-              <div>
-                <h3 class="lab-title">VLAN &amp; Inter-VLAN Routing</h3>
-                <span class="lab-subtitle">Virtual Local Area Networks</span>
-              </div>
-            </div>
-            <p class="lab-desc">
-              Configured 802.1Q trunking, VLAN segmentations (Admin, Guest, Student, Voice), and Router-on-a-Stick sub-interface routing.
-            </p>
-            <div class="lab-features">
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> 802.1Q Trunking</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> Sub-interfaces</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> Traffic Isolation</span>
-            </div>
-          </div>
-
-          <div class="lab-card">
-            <div class="lab-header">
-              <i class="uil uil-exchange lab-icon"></i>
-              <div>
-                <h3 class="lab-title">Static &amp; Dynamic Routing (RIP / OSPF)</h3>
-                <span class="lab-subtitle">Multi-Router Infrastructure</span>
-              </div>
-            </div>
-            <p class="lab-desc">
-              Built multi-router topologies utilizing IPv4/IPv6 static default routes and OSPF single-area dynamic routing protocols.
-            </p>
-            <div class="lab-features">
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> Single-Area OSPF</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> IPv4 / IPv6 Dual Stack</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> Static Default Routes</span>
-            </div>
-          </div>
-
-          <div class="lab-card">
-            <div class="lab-header">
-              <i class="uil uil-wrench lab-icon"></i>
-              <div>
-                <h3 class="lab-title">Subnetting &amp; Cisco CLI Configuration</h3>
-                <span class="lab-subtitle">Cisco IOS &amp; Packet Tracer</span>
-              </div>
-            </div>
-            <p class="lab-desc">
-              Proficient in Cisco IOS CLI for hostname configuration, SSH encrypted remote access, password hashing, and STP loop avoidance.
-            </p>
-            <div class="lab-features">
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> Cisco IOS CLI</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> SSH Remote Access</span>
-              <span class="lab-pill"><i class="uil uil-check-circle"></i> STP &amp; Port Security</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Technical Skills Section -->
-      <section class="section reveal" id="skills" aria-labelledby="skills-heading">
-        <span class="section-eyebrow" id="skills-heading" role="heading" aria-level="2">Technical Core</span>
-
-        <div class="skills-grid">
-
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <i class="uil uil-wifi skill-card-icon" aria-hidden="true"></i>
-              <h3 class="skill-card-title">Network Engineering</h3>
-            </div>
-            <p class="skill-card-desc">Cisco IOS CLI, LAN/WAN fundamentals, Packet Tracer simulations, VLANs, 802.1Q trunking, OSPF routing &amp; subnetting.</p>
-            <div class="skill-tags">
-              <span class="tag">TCP/IP</span>
-              <span class="tag">LAN/WAN</span>
-              <span class="tag">Cisco IOS</span>
-              <span class="tag">Cisco Packet Tracer</span>
-              <span class="tag">VLANs</span>
-              <span class="tag">OSPF Routing</span>
-              <span class="tag">Subnetting</span>
-              <span class="tag">Network Security</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <i class="uil uil-desktop skill-card-icon" aria-hidden="true"></i>
-              <h3 class="skill-card-title">IT Support &amp; Systems</h3>
-            </div>
-            <p class="skill-card-desc">Hardware and software diagnostics, Windows administration, PC assembly, OS optimization, printer setup, and malware remediation.</p>
-            <div class="skill-tags">
-              <span class="tag">Hardware Repair</span>
-              <span class="tag">Windows Admin</span>
-              <span class="tag">PC Assembly</span>
-              <span class="tag">Diagnostics</span>
-              <span class="tag">System Maintenance</span>
-              <span class="tag">Printer Setup</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <i class="uil uil-brackets-curly skill-card-icon" aria-hidden="true"></i>
-              <h3 class="skill-card-title">Web Development</h3>
-            </div>
-            <p class="skill-card-desc">Full-stack web applications, REST APIs, interactive client interfaces &amp; database integrations.</p>
-            <div class="skill-tags">
-              <span class="tag">HTML5 / CSS3</span>
-              <span class="tag">JavaScript (ES6+)</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">React</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">Express.js</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">REST APIs</span>
-              <span class="tag">MySQL / MongoDB</span>
-              <span class="tag">Sequelize ORM</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <i class="uil uil-palette skill-card-icon" aria-hidden="true"></i>
-              <h3 class="skill-card-title">UI/UX &amp; Graphic Design</h3>
-            </div>
-            <p class="skill-card-desc">Digital branding assets, client event posters, apparel mockups, user interfaces &amp; wireframes.</p>
-            <div class="skill-tags">
-              <span class="tag">UI/UX Design</span>
-              <span class="tag">Figma</span>
-              <span class="tag">Adobe Photoshop</span>
-              <span class="tag">Canva</span>
-              <span class="tag">Brand Design</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <i class="uil uil-wrench skill-card-icon" aria-hidden="true"></i>
-              <h3 class="skill-card-title">Development Tools</h3>
-            </div>
-            <p class="skill-card-desc">Version control, API testing, collaborative development, and day-to-day implementation tools.</p>
-            <div class="skill-tags">
-              <span class="tag">Git</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">VS Code</span>
-              <span class="tag">Postman</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Graphic Design Portfolio -->
-      <section class="section reveal" id="gallery" aria-labelledby="gallery-heading">
-        <span class="section-eyebrow" id="gallery-heading" role="heading" aria-level="2">Graphic Design Portfolio</span>
-
-        <p class="gallery-intro">
-          Design is part of how I communicate product ideas and support clients visually, especially for branding, events, and promotional materials. Click any image to view full size.
-        </p>
-
-        <div class="gallery-grid" id="gallery-grid" role="list">
-
-          <div class="gallery-item" role="listitem" tabindex="0" data-src="assets/SAN ROQUE GRADUATION POSTER 2026.webp"
-            data-caption="San Roque Graduation Poster 2026">
-            <img src="assets/SAN ROQUE GRADUATION POSTER 2026.webp" alt="San Roque Graduation Poster 2026" width="1080" height="1350" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Graduation Poster · 2026</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" role="listitem" tabindex="0" data-src="assets/SAN ROQUE GRADUATION POSTER JULY.webp"
-            data-caption="San Roque Graduation Poster — July">
-            <img src="assets/SAN ROQUE GRADUATION POSTER JULY.webp" alt="San Roque Graduation Poster July" width="1080" height="1350" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Graduation Poster · July</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" role="listitem" tabindex="0" data-src="assets/SAN ROQUE LTO PARTNERSHIP.webp"
-            data-caption="San Roque LTO Partnership Poster">
-            <img src="assets/SAN ROQUE LTO PARTNERSHIP.webp" alt="San Roque LTO Partnership poster" width="1024" height="1536" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">LTO Partnership Poster</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" role="listitem" tabindex="0" data-src="assets/SAN ROQUE FS 2026 V1.4.webp"
-            data-caption="San Roque FS 2026 — v1.4">
-            <img src="assets/SAN ROQUE FS 2026 V1.4.webp" alt="San Roque FS 2026 v1.4" width="3000" height="3000" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">FS 2026 Poster · v1.4</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" role="listitem" tabindex="0" data-src="assets/SAN ROQUE FS 2026 V1.3.webp"
-            data-caption="San Roque FS 2026 — v1.3">
-            <img src="assets/SAN ROQUE FS 2026 V1.3.webp" alt="San Roque FS 2026 v1.3" width="3000" height="3000" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">FS 2026 Poster · v1.3</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" role="listitem" tabindex="0" data-src="assets/SAN ROQUE FS 2026 V1.2.webp"
-            data-caption="San Roque FS 2026 — v1.2">
-            <img src="assets/SAN ROQUE FS 2026 V1.2.webp" alt="San Roque FS 2026 v1.2" width="3000" height="3000" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">FS 2026 Poster · v1.2</span>
-            </div>
-          </div>
-
-          <div class="gallery-item gallery-extra" style="display: none;" role="listitem" tabindex="0" data-src="assets/1968 CLOTHING V4.webp"
-            data-caption="1968 Clothing — Apparel Mockup">
-            <img src="assets/1968 CLOTHING V4.webp" alt="1968 Clothing apparel mockup" width="1600" height="1600" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">1968 Clothing Mockup</span>
-            </div>
-          </div>
-
-          <div class="gallery-item gallery-extra" style="display: none;" role="listitem" tabindex="0" data-src="assets/1968 CLOTHING V2.webp"
-            data-caption="1968 Clothing — Version 2">
-            <img src="assets/1968 CLOTHING V2.webp" alt="1968 Clothing version 2" width="1600" height="1600" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">1968 Clothing · v2</span>
-            </div>
-          </div>
-
-          <div class="gallery-item gallery-extra" style="display: none;" role="listitem" tabindex="0" data-src="assets/1968 CLOTHING LANDING PAGE.webp"
-            data-caption="1968 Clothing — Web Design">
-            <img src="assets/1968 CLOTHING LANDING PAGE.webp" alt="1968 Clothing landing page" width="1890" height="913" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">1968 Clothing · Web Design</span>
-            </div>
-          </div>
-
-          <div class="gallery-item gallery-extra" style="display: none;" role="listitem" tabindex="0" data-src="assets/Figure 18.webp"
-            data-caption="Design Work">
-            <img src="assets/Figure 18.webp" alt="Design work" width="1920" height="1080" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Design Work</span>
-            </div>
-          </div>
-
-          <div class="gallery-item gallery-extra" style="display: none;" role="listitem" tabindex="0" data-src="assets/Figure 19.webp"
-            data-caption="Design Work">
-            <img src="assets/Figure 19.webp" alt="Design work" width="1920" height="1080" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Design Work</span>
-            </div>
-          </div>
-
-          <div class="gallery-item gallery-extra" style="display: none;" role="listitem" tabindex="0" data-src="assets/prism.webp"
-            data-caption="Prism — Design Exploration">
-            <img src="assets/prism.webp" alt="Prism design exploration" width="1000" height="1240" loading="lazy" decoding="async" />
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-label">Design Exploration</span>
-            </div>
-          </div>
-
-        </div>
-
-        <div style="text-align: center; margin-top: 24px;">
-          <button class="gallery-toggle-btn" id="gallery-toggle-btn" type="button" onclick="toggleGallery()" aria-expanded="false" aria-controls="gallery-grid">
-            <i class="uil uil-plus-circle"></i> Show All Graphic Designs (12 Works)
-          </button>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="section reveal" id="contact" style="padding-bottom: 120px;">
-        <span class="contact-eyebrow">What's Next?</span>
-        <h2 class="contact-heading">Get In Touch</h2>
-        <p class="contact-body">
-          Open to IT support and networking internships or entry-level opportunities, plus web projects where hands-on troubleshooting and development skills are valuable.
-        </p>
-
-        <div class="contact-action-wrapper">
-          <div class="contact-email-card" id="contact-email-card">
-            <a href="mailto:johncedricklibradilla@gmail.com?subject=Portfolio%20Inquiry%20-%20John%20Cedrick%20Libradilla" class="contact-email-link" aria-label="Email John Cedrick Libradilla">
-              <div class="email-card-icon" title="Gmail">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.5 6.5C2.5 5.95 2.95 5.5 3.5 5.5H20.5C21.05 5.5 21.5 5.95 21.5 6.5L12 13L2.5 6.5Z" fill="#EA4335"/>
-                <path d="M2.5 19.5V6.5L12 13L21.5 6.5V19.5C21.5 20.05 21.05 20.5 20.5 20.5H3.5C2.95 20.5 2.5 20.05 2.5 19.5Z" fill="#4285F4"/>
-                <path d="M12 13L2.5 6.5V19.5H6.5V11L12 14.8L17.5 11V19.5H21.5V6.5L12 13Z" fill="#EA4335"/>
-                <path d="M20.5 5.5H17.5V11L21.5 8V6.5C21.5 5.95 21.05 5.5 20.5 5.5Z" fill="#FBBC05"/>
-                <path d="M3.5 5.5H6.5V11L2.5 8V6.5C2.5 5.95 2.95 5.5 3.5 5.5Z" fill="#34A853"/>
-              </svg>
-              </div>
-              <div class="email-card-content">
-                <span class="email-label">Direct Email</span>
-                <span class="email-val">johncedricklibradilla@gmail.com</span>
-              </div>
-            </a>
-            <button type="button" class="email-copy-badge" id="copy-text-badge" onclick="copyEmailAddress()" aria-label="Copy email address" aria-live="polite">
-              <i class="uil uil-copy"></i> <span>Copy Email</span>
-            </button>
-          </div>
-
-          <div class="contact-secondary-actions">
-            <a href="tel:+639560757817" class="contact-btn secondary-btn">
-              <i class="uil uil-phone"></i> +63 956 075 7817
-            </a>
-            <a href="https://www.linkedin.com/in/john-cedrick-libradilla-1b2265426/" target="_blank" rel="noopener noreferrer" class="contact-btn secondary-btn">
-              <i class="uil uil-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/johncedrick68" target="_blank" rel="noopener noreferrer" class="contact-btn secondary-btn">
-              <i class="uil uil-github"></i> GitHub
-            </a>
-            <a href="John_Cedrick_Libradilla_Resume%202.pdf" target="_blank" rel="noopener noreferrer" class="contact-btn secondary-btn resume-btn">
-              <i class="uil uil-file-download-alt"></i> Résumé
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer" aria-label="Site footer">
-        <p>
-          Designed, developed, and maintained by
-          <a href="https://github.com/johncedrick68" target="_blank" rel="noopener noreferrer">John Cedrick Libradilla</a>.
-        </p>
-        <p class="footer-tech-stack">
-          Built with HTML5, Vanilla CSS, and JavaScript.
-        </p>
-      </footer>
-
-    </main>
-  </div>
-
-  <!-- Lightbox for Graphic Design Portfolio -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" aria-hidden="true">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">
-      <i class="uil uil-times" aria-hidden="true"></i>
-    </button>
-    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">
-      <i class="uil uil-angle-left" aria-hidden="true"></i>
-    </button>
-    <img class="lightbox-img" id="lightbox-img" src="" alt="" width="1" height="1" />
-    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">
-      <i class="uil uil-angle-right" aria-hidden="true"></i>
-    </button>
-    <span class="lightbox-caption" id="lightbox-caption"></span>
-  </div>
-
-  <!-- Case Study Modal -->
-  <div class="modal-backdrop" id="case-study-modal" role="dialog" aria-modal="true" aria-labelledby="case-study-modal-title" aria-hidden="true">
-    <div class="modal-box">
-      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
-        <i class="uil uil-times"></i>
-      </button>
-      <div class="modal-content" id="modal-content-body">
-        <!-- Dynamic Case Study Content Loaded via JS -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-menu-top">
+      <span class="micro-label">Navigate</span>
+      <button class="menu-close" type="button" aria-label="Close navigation">close ×</button>
+    </div>
+    <a href="#about"><span>01</span> About</a>
+    <a href="#work"><span>02</span> Selected work</a>
+    <a href="#practice"><span>03</span> Technical practice</a>
+    <a href="#experience"><span>04</span> Experience</a>
+    <a href="#credentials"><span>05</span> Credentials</a>
+    <a href="#design"><span>06</span> Design archive</a>
+    <a href="#contact"><span>07</span> Contact</a>
+    <div class="mobile-menu-utilities">
+      <span class="micro-label">Appearance</span>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button type="button" data-theme-opt="system" class="theme-opt" title="System" aria-label="System theme">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"></rect><path d="M9 21h6M12 17v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg>
+        </button>
+        <button type="button" data-theme-opt="light" class="theme-opt" title="Light" aria-label="Light theme">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg>
+        </button>
+        <button type="button" data-theme-opt="dark" class="theme-opt" title="Dark" aria-label="Dark theme">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 13.6A8 8 0 1 1 10.4 4a6.2 6.2 0 0 0 9.6 9.6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path></svg>
+        </button>
       </div>
     </div>
+  </nav>
+
+  <aside class="sidebar" aria-label="Portfolio navigation">
+    <div>
+      <a class="sidebar-brand" href="#top">John Cedrick<br>Libradilla</a>
+      <p class="sidebar-role">IT infrastructure<br>&amp; software</p>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Section navigation">
+      <a href="#about" data-section="about"><span>01</span> about</a>
+      <a href="#work" data-section="work"><span>02</span> work</a>
+      <a href="#practice" data-section="practice"><span>03</span> practice</a>
+      <a href="#experience" data-section="experience"><span>04</span> experience</a>
+      <a href="#credentials" data-section="credentials"><span>05</span> credentials</a>
+      <a href="#design" data-section="design"><span>06</span> design</a>
+      <a href="#contact" data-section="contact"><span>07</span> contact</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <button class="command-trigger" type="button" data-command-open>
+        <span>quick find</span><kbd>⌘ K</kbd>
+      </button>
+      <div class="sidebar-status" aria-label="Cebu local status">
+        <div><span class="status-pulse" aria-hidden="true"></span><span>online · Cebu, PH</span></div>
+        <time data-local-time datetime="">--:--:-- PHT</time>
+      </div>
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button type="button" data-theme-opt="system" class="theme-opt" title="System" aria-label="System theme">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"></rect><path d="M9 21h6M12 17v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg>
+        </button>
+        <button type="button" data-theme-opt="light" class="theme-opt" title="Light" aria-label="Light theme">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg>
+        </button>
+        <button type="button" data-theme-opt="dark" class="theme-opt" title="Dark" aria-label="Dark theme">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 13.6A8 8 0 1 1 10.4 4a6.2 6.2 0 0 0 9.6 9.6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path></svg>
+        </button>
+      </div>
+      <div class="sidebar-links">
+        <a href="https://github.com/johncedrick68" target="_blank" rel="noopener noreferrer">github ↗</a>
+        <a href="https://www.linkedin.com/in/john-cedrick-libradilla-1b2265426/" target="_blank" rel="noopener noreferrer">linkedin ↗</a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <div class="content-shell" id="top">
+      <section class="hero reveal" aria-labelledby="hero-title">
+        <figure class="profile-id">
+          <div class="id-lanyard" aria-hidden="true"></div>
+          <div class="id-stage">
+            <img src="assets/Cedrick-ID.webp" alt="Hanging identification badge featuring John Cedrick Libradilla" width="2880" height="1620" fetchpriority="high" decoding="async" draggable="false">
+          </div>
+          <figcaption>Identity · Cebu, PH · 2026</figcaption>
+        </figure>
+        <div class="hero-copy">
+          <div class="availability"><span aria-hidden="true"></span> Available for internships &amp; project work</div>
+          <p class="hero-kicker">IT infrastructure · systems support · software</p>
+          <h1 id="hero-title">John Cedrick Libradilla</h1>
+          <p>I’m an IT practitioner focused on support, computer networking, and full-stack web development. I diagnose systems, configure reliable infrastructure, and turn practical needs into working software.</p>
+          <p>Right now I’m building PasaHERO, an AI-assisted commute platform for Cebu City, while completing my BS Information Technology degree at the University of Cebu.</p>
+          <div class="hero-links" aria-label="Profile links">
+            <a href="https://github.com/johncedrick68" target="_blank" rel="noopener noreferrer">github ↗</a>
+            <a href="https://www.linkedin.com/in/john-cedrick-libradilla-1b2265426/" target="_blank" rel="noopener noreferrer">linkedin ↗</a>
+            <a href="https://www.facebook.com/profile.php?id=61576723666560" target="_blank" rel="noopener noreferrer">design ↗</a>
+            <a href="mailto:johncedricklibradilla@gmail.com?subject=Portfolio%20Inquiry">email</a>
+            <a href="John_Cedrick_Libradilla_Resume%202.pdf" target="_blank" rel="noopener noreferrer">résumé ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="proof-grid reveal" aria-label="Portfolio highlights">
+        <div><strong>2021</strong><span>hands-on IT support since</span></div>
+        <div><strong>7+</strong><span>technical credentials</span></div>
+        <div><strong>03</strong><span>featured builds</span></div>
+        <div><strong>PH</strong><span>based in Cebu</span></div>
+      </div>
+
+      <section class="section reveal" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-index">01 — about</p>
+          <h2 id="about-title">Infrastructure thinking,<br>expressed through software.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>I study Information Technology at the University of Cebu with a focus on computer networking, systems support, and full-stack development.</p>
+            <p>My work begins with diagnosis: understand the environment, isolate the real constraint, then build a solution that remains understandable and dependable.</p>
+          </div>
+          <dl class="profile-list">
+            <div><dt>Primary focus</dt><dd>IT support &amp; networking</dd></div>
+            <div><dt>Development</dt><dd>Web apps &amp; practical tools</dd></div>
+            <div><dt>Currently</dt><dd>Building PasaHERO</dd></div>
+            <div><dt>Education</dt><dd>BSIT · graduating 2027</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section section-wide reveal" id="work" aria-labelledby="work-title">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="section-index">02 — selected work</p>
+            <h2 id="work-title">Systems built around<br>actual constraints.</h2>
+          </div>
+          <p class="section-note">Three projects across civic mobility, learning, and commerce.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-featured" data-tilt>
+            <button class="project-image" type="button" data-case-study="pasahero" aria-label="Read the PasaHERO case study">
+              <img src="assets/PASAHERO.webp" alt="PasaHERO route-planning interface" width="1254" height="1254" loading="lazy" decoding="async">
+            </button>
+            <div class="project-content">
+              <div class="project-meta"><span class="inverted-chip">flagship</span><span>2025—present</span></div>
+              <h3>PasaHERO</h3>
+              <p class="project-type">AI-assisted multimodal navigation · Capstone</p>
+              <p>A commuter-first route-planning platform for Cebu City that combines jeepney routes, fare analysis, transfer logic, and landmark-based guidance.</p>
+              <ul class="tag-list" aria-label="PasaHERO technologies">
+                <li>React</li><li>Node.js</li><li>MySQL</li><li>Mapbox</li><li>System design</li>
+              </ul>
+              <button class="case-link" type="button" data-case-study="pasahero">read case study <span>↗</span></button>
+            </div>
+          </article>
+
+          <div class="project-grid">
+            <article class="project-card" data-tilt>
+              <button class="project-image" type="button" data-case-study="ltoreviewer" aria-label="Read the LTO Reviewer case study">
+                <img src="assets/bettergovfeaturesreviewer.webp" alt="LTO Reviewer quiz application" width="2048" height="1817" loading="lazy" decoding="async">
+              </button>
+              <div class="project-content">
+                <div class="project-meta"><span>live application</span><span>2025</span></div>
+                <h3>LTO Reviewer</h3>
+                <p class="project-type">Secure educational quiz platform</p>
+                <p>Mobile-first exam preparation with instant explanations, signed sessions, rate limiting, and automated browser coverage.</p>
+                <ul class="tag-list" aria-label="LTO Reviewer technologies"><li>Next.js</li><li>TypeScript</li><li>Playwright</li></ul>
+                <div class="project-links">
+                  <button class="case-link" type="button" data-case-study="ltoreviewer">case study <span>↗</span></button>
+                  <a href="https://www.facebook.com/share/p/1PLsyqtzPx/" target="_blank" rel="noopener noreferrer">BetterGov feature ↗</a>
+                  <a href="https://quizziz-cedrick.vercel.app/" target="_blank" rel="noopener noreferrer">live site ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-tilt>
+              <button class="project-image" type="button" data-case-study="clothing" aria-label="Read the 1968 Clothing case study">
+                <img src="assets/1968 CLOTHING LANDING PAGE.webp" alt="1968 Clothing ecommerce landing page" width="1890" height="913" loading="lazy" decoding="async">
+              </button>
+              <div class="project-content">
+                <div class="project-meta"><span>live experience</span><span>2025</span></div>
+                <h3>1968 Clothing</h3>
+                <p class="project-type">E-commerce landing experience</p>
+                <p>A responsive streetwear showcase built around bold product storytelling, fast local assets, and direct navigation.</p>
+                <ul class="tag-list" aria-label="1968 Clothing technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <div class="project-links">
+                  <button class="case-link" type="button" data-case-study="clothing">case study <span>↗</span></button>
+                  <a href="https://1968-clothing.vercel.app/" target="_blank" rel="noopener noreferrer">live site ↗</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="practice" aria-labelledby="practice-title">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="section-index">03 — technical practice</p>
+            <h2 id="practice-title">From cable and CLI<br>to interface and API.</h2>
+          </div>
+          <p class="section-note">A practical stack built from the network upward.</p>
+        </div>
+
+        <div class="practice-grid">
+          <article>
+            <span class="practice-number">01</span>
+            <h3>Networks</h3>
+            <p>SOHO LANs, VLANs, inter-VLAN routing, TCP/IP, subnetting, RIP, OSPF, router and switch configuration.</p>
+            <span class="practice-tool">Cisco IOS · Packet Tracer</span>
+          </article>
+          <article>
+            <span class="practice-number">02</span>
+            <h3>Systems support</h3>
+            <p>Hardware diagnosis, PC assembly, Windows administration, printer sharing, maintenance, and user support.</p>
+            <span class="practice-tool">Windows · Linux · Hardware</span>
+          </article>
+          <article>
+            <span class="practice-number">03</span>
+            <h3>Software</h3>
+            <p>Responsive frontends, REST services, relational data models, authentication, testing, and deployment.</p>
+            <span class="practice-tool">React · Node · SQL</span>
+          </article>
+          <article>
+            <span class="practice-number">04</span>
+            <h3>Visual systems</h3>
+            <p>Interface design, brand materials, print-ready layouts, and visual communication for local organizations.</p>
+            <span class="practice-tool">Figma · Photoshop · Canva</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="section-index">04 — experience</p>
+          <h2 id="experience-title">Learning by shipping<br>and supporting.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>2025—present</time>
+            <div><h3>Software Developer · PasaHERO</h3><p>University of Cebu capstone</p><p>Leading interface, backend, database, mapping, and technical documentation work for an AI-assisted Cebu commute platform.</p></div>
+          </article>
+          <article>
+            <time>2024—present</time>
+            <div><h3>Student Volunteer</h3><p>University of Cebu · CCS CARES</p><p>Supporting community digital-literacy programs through Microsoft Office training and hands-on troubleshooting.</p></div>
+          </article>
+          <article>
+            <time>2023—present</time>
+            <div><h3>Freelance Web Developer &amp; Designer</h3><p>Independent · Cebu</p><p>Delivering responsive websites and visual materials for startups, local businesses, schools, and community organizations.</p></div>
+          </article>
+          <article>
+            <time>2021—present</time>
+            <div><h3>Freelance IT Support Technician</h3><p>Independent · Cebu</p><p>Providing hardware and software diagnosis, PC assembly, Windows optimization, LAN setup, and preventive maintenance.</p></div>
+          </article>
+        </div>
+        <div class="education-row">
+          <span class="micro-label">Education</span>
+          <div><strong>BS Information Technology</strong><span>University of Cebu · Expected June 2027</span></div>
+          <div><strong>TVL — Computer Systems Servicing</strong><span>University of Cebu · Batch 2023</span></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="credentials" aria-labelledby="credentials-title">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="section-index">05 — credentials</p>
+            <h2 id="credentials-title">Verified foundations.</h2>
+          </div>
+          <p class="section-note">Networking, cybersecurity, Linux, and digital systems.</p>
+        </div>
+        <div class="credential-list">
+          <a href="assets/certificates/CCNA_Introduction_to_Networks.pdf" target="_blank" rel="noopener noreferrer"><span>CCNA: Introduction to Networks</span><small>Cisco · PDF</small><b>↗</b></a>
+          <a href="assets/certificates/Networking_Essentials.pdf" target="_blank" rel="noopener noreferrer"><span>Networking Essentials</span><small>Cisco · PDF</small><b>↗</b></a>
+          <a href="assets/certificates/Cybersecurity_Essentials.pdf" target="_blank" rel="noopener noreferrer"><span>Cybersecurity Essentials</span><small>Cisco · PDF</small><b>↗</b></a>
+          <a href="assets/certificates/Introduction_to_Cybersecurity.pdf" target="_blank" rel="noopener noreferrer"><span>Introduction to Cybersecurity</span><small>Cisco · PDF</small><b>↗</b></a>
+          <a href="assets/certificates/Introduction_to_Packet_Tracer.pdf" target="_blank" rel="noopener noreferrer"><span>Introduction to Packet Tracer</span><small>Cisco · PDF</small><b>↗</b></a>
+          <a href="assets/certificates/NDG_Linux_Unhatched.pdf" target="_blank" rel="noopener noreferrer"><span>NDG Linux Unhatched</span><small>NDG · PDF</small><b>↗</b></a>
+          <a href="assets/certificates/Get_Connected.pdf" target="_blank" rel="noopener noreferrer"><span>Get Connected</span><small>Cisco · PDF</small><b>↗</b></a>
+          <a href="assets/certificates/3rd-place-general-it-quiz-competition.jpg" target="_blank" rel="noopener noreferrer"><span>3rd Place · General IT Quiz</span><small>Competition · proof</small><b>↗</b></a>
+        </div>
+      </section>
+
+      <section class="section section-wide reveal" id="design" aria-labelledby="design-title">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="section-index">06 — design archive</p>
+            <h2 id="design-title">Selected visual work.</h2>
+          </div>
+          <a class="text-link" href="https://www.facebook.com/profile.php?id=61576723666560" target="_blank" rel="noopener noreferrer">design page ↗</a>
+        </div>
+        <div class="gallery" data-gallery>
+          <button type="button" data-image="assets/SAN ROQUE GRADUATION POSTER 2026.webp" data-caption="San Roque graduation poster · 2026"><img src="assets/SAN ROQUE GRADUATION POSTER 2026.webp" alt="San Roque graduation poster" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" data-image="assets/SAN ROQUE LTO PARTNERSHIP.webp" data-caption="San Roque LTO partnership campaign"><img src="assets/SAN ROQUE LTO PARTNERSHIP.webp" alt="San Roque LTO partnership campaign" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" data-image="assets/SAN ROQUE FS 2026 V1.4.webp" data-caption="San Roque campaign study"><img src="assets/SAN ROQUE FS 2026 V1.4.webp" alt="San Roque campaign design" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" data-image="assets/1968 CLOTHING V4.webp" data-caption="1968 Clothing visual direction"><img src="assets/1968 CLOTHING V4.webp" alt="1968 Clothing apparel design" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" data-image="assets/Figure 19.webp" data-caption="Interface and visual design study"><img src="assets/Figure 19.webp" alt="Interface design study" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" data-image="assets/prism.webp" data-caption="Prism visual concept"><img src="assets/prism.webp" alt="Prism visual concept" width="1080" height="1350" loading="lazy"></button>
+        </div>
+      </section>
+
+      <section class="contact reveal" id="contact" aria-labelledby="contact-title">
+        <p class="section-index">07 — contact</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-title">Let’s build something<br>useful and reliable.</h2>
+            <p>I’m open to internships, technical support work, freelance projects, and collaborations in Cebu or remote.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="contact-email" href="mailto:johncedricklibradilla@gmail.com?subject=Portfolio%20Inquiry">johncedricklibradilla<br>@gmail.com <span>↗</span></a>
+            <button class="copy-email" type="button" data-copy-email>copy email</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>© <span data-year>2026</span> John Cedrick Libradilla</span>
+        <span>Designed and built in Cebu, Philippines</span>
+        <a href="#top">back to top ↑</a>
+      </footer>
+    </div>
+  </main>
+
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-dialog-title">
+    <div class="dialog-bar"><span class="micro-label">Case study</span><button type="button" data-dialog-close>close ×</button></div>
+    <div class="dialog-content" data-dialog-content></div>
+  </dialog>
+
+  <dialog class="image-dialog" id="image-dialog" aria-labelledby="image-caption">
+    <button class="image-close" type="button" data-image-close aria-label="Close image viewer">close ×</button>
+    <img data-dialog-image src="assets/prism.webp" alt="" loading="lazy" decoding="async">
+    <p id="image-caption" data-image-caption></p>
+  </dialog>
+
+  <dialog class="command-dialog" id="command-dialog" aria-labelledby="command-title">
+    <div class="command-head">
+      <div>
+        <span class="command-mark" aria-hidden="true">›_</span>
+        <label id="command-title" for="command-input">Quick navigator</label>
+      </div>
+      <button type="button" data-command-close aria-label="Close quick navigator">esc</button>
+    </div>
+    <input id="command-input" data-command-input type="search" autocomplete="off" placeholder="Type to filter actions…" aria-controls="command-results">
+    <div class="command-results" id="command-results" data-command-results>
+      <p>Navigate</p>
+      <a href="#work" data-command-item data-keywords="projects work builds"><span>Selected work</span><kbd>02</kbd></a>
+      <a href="#practice" data-command-item data-keywords="skills stack network support"><span>Technical practice</span><kbd>03</kbd></a>
+      <a href="#experience" data-command-item data-keywords="experience education timeline"><span>Experience</span><kbd>04</kbd></a>
+      <a href="#credentials" data-command-item data-keywords="certificates cisco credentials"><span>Credentials</span><kbd>05</kbd></a>
+      <a href="#contact" data-command-item data-keywords="contact email hire"><span>Contact</span><kbd>07</kbd></a>
+      <p>Actions</p>
+      <a href="John_Cedrick_Libradilla_Resume%202.pdf" target="_blank" rel="noopener noreferrer" data-command-item data-keywords="resume cv pdf"><span>Open résumé</span><kbd>↗</kbd></a>
+      <button type="button" data-command-item data-command-copy data-keywords="copy email contact"><span>Copy email address</span><kbd>↵</kbd></button>
+      <button type="button" data-command-item data-command-theme data-keywords="theme appearance dark light system"><span>Cycle color theme</span><kbd>◐</kbd></button>
+      <div class="command-empty" data-command-empty hidden>No matching action.</div>
+    </div>
+    <div class="command-foot"><span><kbd>↑↓</kbd> move</span><span><kbd>enter</kbd> open</span><span><kbd>esc</kbd> close</span></div>
+  </dialog>
+
+  <div class="legacy-portal" data-legacy-portal>
+    <div class="legacy-menu" id="legacy-menu" data-legacy-menu hidden>
+      <span class="micro-label">Portfolio timeline</span>
+      <strong>Visit the previous version?</strong>
+      <p>The original portfolio remains online as an archive of the site before this redesign.</p>
+      <a href="https://portfolio-cedrick.vercel.app/" target="_blank" rel="noopener noreferrer">open legacy portfolio ↗</a>
+      <button type="button" data-legacy-top>back to top ↑</button>
+    </div>
+    <span class="legacy-hint" aria-hidden="true">legacy portal</span>
+    <button class="legacy-orb" type="button" data-legacy-toggle aria-expanded="false" aria-controls="legacy-menu" aria-label="Open legacy portfolio options">
+      <span class="orb-core" aria-hidden="true"></span>
+      <span class="orb-ring orb-ring-one" aria-hidden="true"></span>
+      <span class="orb-ring orb-ring-two" aria-hidden="true"></span>
+      <span class="orb-particle orb-particle-one" aria-hidden="true"></span>
+      <span class="orb-particle orb-particle-two" aria-hidden="true"></span>
+      <span class="orb-particle orb-particle-three" aria-hidden="true"></span>
+    </button>
   </div>
 
-  <script>
-    'use strict';
-
-    /* ── 1-Click Copy Email ── */
-    function copyEmailAddress() {
-      const email = 'johncedricklibradilla@gmail.com';
-      const badge = document.getElementById('copy-text-badge');
-      const copyOperation = navigator.clipboard?.writeText
-        ? navigator.clipboard.writeText(email)
-        : Promise.reject(new Error('Clipboard API unavailable'));
-
-      copyOperation.then(() => {
-        if (badge) {
-          badge.innerHTML = '<i class="uil uil-check"></i> <span>Copied!</span>';
-          badge.classList.add('copied');
-          setTimeout(() => {
-            badge.innerHTML = '<i class="uil uil-copy"></i> <span>Copy Email</span>';
-            badge.classList.remove('copied');
-          }, 2500);
-        }
-      }).catch(() => {
-        if (badge) badge.innerHTML = '<i class="uil uil-exclamation-circle"></i> <span>Copy unavailable</span>';
-      });
-    }
-
-    /* ── Case Study Data Store ── */
-    const CASE_STUDIES = {
-      pasahero: {
-        title: "PasaHERO — AI-Assisted Multimodal Navigation Platform",
-        subtitle: "University of Cebu Capstone Project • In Development (Expected Completion: 2027)",
-        image: "assets/PASAHERO.webp",
-        imageWidth: 1254,
-        imageHeight: 1254,
-        overview: "PasaHERO is an AI-assisted multimodal web navigation platform designed to improve how commuters navigate Cebu City's public transportation system. The platform helps users identify optimal jeepney routes by combining route recommendations, fare estimation, interactive mapping, and landmark-based navigation into a single, user-friendly experience.\n\nAs our BS Information Technology capstone project at the University of Cebu, PasaHERO focuses on making traditional public transportation more accessible through modern web technologies and intelligent route planning.",
-        problem: "Public transportation in Cebu City presents several challenges for commuters: complex and difficult-to-understand jeepney routes, limited access to centralized digital route information, inconsistent fare estimation, difficulty identifying transfer points and nearby landmarks, and a lack of commuter-focused navigation tools for traditional jeepneys.",
-        solution: "To address these challenges, we designed PasaHERO with an AI-assisted, rule-based route recommendation engine that evaluates multiple travel options using predefined decision criteria rather than machine learning. The platform analyzes estimated fare, walking distance, transfer requirements, landmark accessibility, and route availability—presented through an interactive Mapbox-powered interface.",
-        contributions: [
-          "Developing responsive user interfaces using React and Tailwind CSS",
-          "Building backend services with Node.js and Express.js",
-          "Designing and implementing the MySQL database using Sequelize ORM",
-          "Integrating interactive maps and browser geolocation with Mapbox GL JS",
-          "Developing components of the rule-based route recommendation system",
-          "Preparing software architecture diagrams, database models, and technical documentation",
-          "Participating in planning, development, testing, and system evaluation"
-        ],
-        features: [
-          "AI-Assisted Rule-Based Route Recommendation",
-          "Interactive Mapbox GL JS Mapping",
-          "Browser Geolocation Integration",
-          "Jeepney Route Visualization",
-          "Fare Analytics & Cost Estimation",
-          "Transfer Route Analysis",
-          "Landmark-Based Navigation",
-          "Responsive Mobile-First Interface",
-          "MySQL Relational Database",
-          "Administrative Route Management System"
-        ],
-        techStack: ["React", "Tailwind CSS", "JavaScript (ES6+)", "Node.js", "Express.js", "MySQL", "Sequelize ORM", "Mapbox GL JS", "Geolocation API", "Figma"],
-        github: "",
-        liveDemo: ""
-      },
-      ltoreviewer: {
-        title: "LTO Reviewer — Quiz Master",
-        subtitle: "Secure Full-Stack Educational Quiz Application",
-        image: "assets/bettergovfeaturesreviewer.webp",
-        imageWidth: 2048,
-        imageHeight: 1817,
-        overview: "An interactive digital review application engineered to help driver's license applicants in the Philippines prepare effectively for official Land Transportation Office (LTO) theoretical exams.",
-        problem: "Traditional review materials are static PDFs or paper questionnaires, making self-assessment tedious and lacking immediate feedback.",
-        solution: "Built a responsive Next.js application with categorized quizzes, instant answer verification, score tracking, signed quiz-session tokens, and server-side rate limiting. Static TypeScript question files keep deployment simple without introducing a database dependency.",
-        features: [
-          "Interactive Multiple-Choice Exam Engine",
-          "Real-Time Answer Verification & Explanations",
-          "Score Summary & Performance Retest",
-          "Signed Quiz-Session Tokens",
-          "Server-Side Rate Limiting",
-          "Static TypeScript Question Data",
-          "Node Test Runner & Playwright Coverage",
-          "Clean Mobile-First Responsive UI"
-        ],
-        techStack: [
-          "Next.js 15 (Pages Router)",
-          "React 18",
-          "TypeScript",
-          "Tailwind CSS 4",
-          "Global CSS",
-          "Next.js API Routes",
-          "Static TypeScript Data (data/lto/)",
-          "Signed Quiz-Session Tokens",
-          "Server-Side Rate Limiting",
-          "Node Test Runner",
-          "Playwright",
-          "npm",
-          "Vercel",
-          "Local Assets (public/)"
-        ],
-        github: "",
-        liveDemo: "https://quizziz-cedrick.vercel.app/"
-      },
-      "1968clothing": {
-        title: "1968 Clothing E-Commerce Experience",
-        subtitle: "Streetwear Brand Landing Page & Product Showcase",
-        image: "assets/1968 CLOTHING LANDING PAGE.webp",
-        imageWidth: 1890,
-        imageHeight: 913,
-        overview: "A modern, high-impact e-commerce landing page created for a contemporary streetwear clothing brand.",
-        problem: "The client needed a visually captivating, high-performance web experience to establish brand identity and display apparel collections across mobile and desktop devices.",
-        solution: "Designed and developed a responsive interface with bold typographic hierarchy, custom product card layouts, interactive apparel previews, and frictionless navigation.",
-        features: [
-          "High-Impact Dark-Theme Aesthetics",
-          "Responsive Apparel Showcase Grid",
-          "Interactive Image Hover Zoom Effects",
-          "Optimized Fast Load Times"
-        ],
-        techStack: [
-          "HTML5",
-          "CSS3",
-          "Vanilla JavaScript",
-          "Local JSON (catalog.json)",
-          "Node.js Catalog Validation",
-          "npm",
-          "Git",
-          "Vercel",
-          "Local WebP, PNG & ICO Assets"
-        ],
-        github: "",
-        liveDemo: "https://1968-clothing.vercel.app/"
-      },
-      freelancedesign: {
-        title: "Freelance Graphic Design & Branding Portfolio",
-        subtitle: "Client Branding, Event Materials & Apparel Mockups",
-        image: "assets/SAN ROQUE GRADUATION POSTER 2026.webp",
-        imageWidth: 1080,
-        imageHeight: 1350,
-        overview: "Comprehensive collection of real-world freelance digital and print graphic design work delivered for local businesses, schools, and organizations.",
-        problem: "Clients required professional marketing collateral, event tarpaulins, graduation posters, and apparel designs delivered on tight schedules.",
-        solution: "Delivered customized high-resolution designs utilizing Adobe Photoshop, Canva, and Figma, adhering to strict color profiles and print specifications.",
-        features: [
-          "Graduation & Event Poster Designs",
-          "High-Resolution Tarpaulins & Banners",
-          "T-Shirt & Apparel Mockups",
-          "Social Media Branding Graphics"
-        ],
-        techStack: ["Adobe Photoshop", "Canva", "Figma", "Print Design"],
-        github: "",
-        liveDemo: "https://www.facebook.com/profile.php?id=61576723666560"
-      }
-    };
-
-    /* ── Smooth 60fps Spotlight Handler ── */
-    const spotlight = document.getElementById('spotlight');
-    let spotlightRaf = null;
-    document.addEventListener('mousemove', e => {
-      if (spotlightRaf) return;
-      spotlightRaf = requestAnimationFrame(() => {
-        spotlight.style.background =
-          `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(45,212,191,0.08), transparent 80%)`;
-        spotlightRaf = null;
-      });
-    }, { passive: true });
-
-    /* ── Mobile hamburger ── */
-    const hamburger = document.getElementById('hamburger');
-    const drawer = document.getElementById('mobile-drawer');
-    const mobileLinks = drawer.querySelectorAll('.mobile-nav-link');
-
-    function closeDrawer(restoreFocus = false) {
-      const wasOpen = drawer.classList.contains('open');
-      drawer.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      drawer.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-      if (restoreFocus && wasOpen) hamburger.focus();
-    }
-
-    hamburger.addEventListener('click', () => {
-      const isOpen = drawer.classList.contains('open');
-      if (isOpen) {
-        closeDrawer();
-      } else {
-        drawer.classList.add('open');
-        hamburger.classList.add('open');
-        hamburger.setAttribute('aria-expanded', 'true');
-        drawer.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-        drawer.querySelector('a')?.focus();
-      }
-    });
-
-    mobileLinks.forEach(link => link.addEventListener('click', closeDrawer));
-
-    /* ── Smooth Active sidebar nav on scroll ── */
-    const sections = document.querySelectorAll('section[id]');
-    const sidebarLinks = document.querySelectorAll('.sidebar-nav-link');
-    const OFFSET = 200;
-    let scrollRaf = null;
-
-    function updateActive() {
-      const scrollY = window.scrollY;
-      let active = '';
-      sections.forEach(s => { if (scrollY >= s.offsetTop - OFFSET) active = s.id; });
-      sidebarLinks.forEach(link => {
-        link.classList.toggle('active', link.dataset.section === active);
-      });
-    }
-
-    window.addEventListener('scroll', () => {
-      if (scrollRaf) return;
-      scrollRaf = requestAnimationFrame(() => {
-        updateActive();
-        scrollRaf = null;
-      });
-    }, { passive: true });
-    updateActive();
-
-    /* ── Scroll reveal ── */
-    const revealEls = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('in');
-          revealObserver.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.01 });
-    revealEls.forEach(el => revealObserver.observe(el));
-    setTimeout(() => { revealEls.forEach(el => el.classList.add('in')); }, 100);
-    /* ── Graphic Design Portfolio Toggle ── */
-    const certificationToggle = document.getElementById('certification-toggle-btn');
-    const certificationExtras = document.querySelectorAll('.cert-extra');
-
-    certificationToggle?.addEventListener('click', () => {
-      const isExpanded = certificationToggle.getAttribute('aria-expanded') === 'true';
-      certificationExtras.forEach(card => { card.hidden = isExpanded; });
-      certificationToggle.setAttribute('aria-expanded', String(!isExpanded));
-      certificationToggle.innerHTML = isExpanded
-        ? '<i class="uil uil-plus-circle"></i> Show All Certificates'
-        : '<i class="uil uil-minus-circle"></i> Show Featured Only';
-    });
-
-    function toggleGallery() {
-      const extraItems = document.querySelectorAll('.gallery-extra');
-      const btn = document.getElementById('gallery-toggle-btn');
-      const isExpanded = btn.classList.contains('expanded');
-
-      extraItems.forEach(item => {
-        item.style.display = isExpanded ? 'none' : 'block';
-      });
-
-      if (isExpanded) {
-        btn.classList.remove('expanded');
-        btn.setAttribute('aria-expanded', 'false');
-        btn.innerHTML = '<i class="uil uil-plus-circle"></i> Show All Graphic Designs (12 Works)';
-      } else {
-        btn.classList.add('expanded');
-        btn.setAttribute('aria-expanded', 'true');
-        btn.innerHTML = '<i class="uil uil-minus-circle"></i> Show Featured Only';
-      }
-    }
-
-    /* ── Lightbox ── */
-    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
-    const lightbox = document.getElementById('lightbox');
-    const lbImg = document.getElementById('lightbox-img');
-    const lbCaption = document.getElementById('lightbox-caption');
-    const lbClose = document.getElementById('lightbox-close');
-    const lbPrev = document.getElementById('lightbox-prev');
-    const lbNext = document.getElementById('lightbox-next');
-    let currentIndex = 0;
-    let focusBeforeDialog = null;
-
-    function getFocusableElements(container) {
-      return Array.from(container.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'))
-        .filter(element => !element.hidden && element.offsetParent !== null);
-    }
-
-    function openLightbox(index) {
-      currentIndex = index;
-      const item = galleryItems[index];
-      const preview = item.querySelector('img');
-      lbImg.src = item.dataset.src;
-      lbImg.alt = item.dataset.caption;
-      lbImg.width = Number(preview?.getAttribute('width')) || 1;
-      lbImg.height = Number(preview?.getAttribute('height')) || 1;
-      lbCaption.textContent = `${item.dataset.caption}  ·  ${index + 1} / ${galleryItems.length}`;
-      if (!lightbox.classList.contains('open')) focusBeforeDialog = document.activeElement;
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-      lbClose.focus();
-    }
-
-    function closeLightbox() {
-      const wasOpen = lightbox.classList.contains('open');
-      lightbox.classList.remove('open');
-      lightbox.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-      if (wasOpen && focusBeforeDialog instanceof HTMLElement) focusBeforeDialog.focus();
-    }
-
-    function showNext() { openLightbox((currentIndex + 1) % galleryItems.length); }
-    function showPrev() { openLightbox((currentIndex - 1 + galleryItems.length) % galleryItems.length); }
-
-    galleryItems.forEach((item, i) => {
-      item.addEventListener('click', () => openLightbox(i));
-      item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(i); } });
-    });
-
-    lbClose.addEventListener('click', closeLightbox);
-    lbPrev.addEventListener('click', e => { e.stopPropagation(); showPrev(); });
-    lbNext.addEventListener('click', e => { e.stopPropagation(); showNext(); });
-    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-
-    /* ── Case Study Modal Logic ── */
-    const modalBackdrop = document.getElementById('case-study-modal');
-    const modalContent = document.getElementById('modal-content-body');
-    const modalCloseBtn = document.getElementById('modal-close-btn');
-
-    function openCaseStudy(key) {
-      const data = CASE_STUDIES[key];
-      if (!data) return;
-
-      const techBadges = data.techStack.map(t => `<span class="tag">${t}</span>`).join(' ');
-      const featureList = data.features.map(f => `<li><i class="uil uil-check-circle"></i> ${f}</li>`).join('');
-
-      let linksHtml = '';
-      if (data.liveDemo) {
-        linksHtml += `<a href="${data.liveDemo}" target="_blank" rel="noopener noreferrer" class="btn-hero-primary"><i class="uil uil-external-link-alt"></i> Live Demo</a> `;
-      }
-      if (data.github) {
-        linksHtml += `<a href="${data.github}" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary"><i class="uil uil-github"></i> GitHub Repository</a>`;
-      }
-
-      modalContent.innerHTML = `
-        <div class="modal-header-block">
-          <span class="modal-eyebrow">Case Study</span>
-          <h2 class="modal-title" id="case-study-modal-title">${data.title}</h2>
-          <p class="modal-subtitle">${data.subtitle}</p>
-        </div>
-        <img src="${data.image}" alt="${data.title}" class="modal-hero-img" width="${data.imageWidth}" height="${data.imageHeight}" decoding="async" />
-        <div class="modal-section">
-          <h3><i class="uil uil-info-circle"></i> Overview</h3>
-          <p>${data.overview.replace(/\n\n/g, '</p><p style="margin-top:12px;">')}</p>
-        </div>
-        <div class="modal-grid-two">
-          <div class="modal-section">
-            <h3><i class="uil uil-exclamation-triangle"></i> The Challenge</h3>
-            <p>${data.problem}</p>
-          </div>
-          <div class="modal-section">
-            <h3><i class="uil uil-lightbulb"></i> The Solution</h3>
-            <p>${data.solution}</p>
-          </div>
-        </div>
-        ${data.contributions ? `
-        <div class="modal-section">
-          <h3><i class="uil uil-user-check"></i> My Key Contributions</h3>
-          <ul class="modal-features-list">${data.contributions.map(c => `<li><i class="uil uil-angle-right-b"></i> ${c}</li>`).join('')}</ul>
-        </div>
-        ` : ''}
-        <div class="modal-section">
-          <h3><i class="uil uil-star"></i> Key Features</h3>
-          <ul class="modal-features-list">${featureList}</ul>
-        </div>
-        <div class="modal-section">
-          <h3><i class="uil uil-layer-group"></i> Tech Stack</h3>
-          <div class="tag-list" style="margin-top:8px;">${techBadges}</div>
-        </div>
-        <div class="modal-actions" style="margin-top:24px;">${linksHtml}</div>
-      `;
-
-      focusBeforeDialog = document.activeElement;
-      modalBackdrop.classList.add('open');
-      modalBackdrop.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-      modalCloseBtn.focus();
-    }
-
-    function closeCaseStudy() {
-      const wasOpen = modalBackdrop.classList.contains('open');
-      modalBackdrop.classList.remove('open');
-      modalBackdrop.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-      if (wasOpen && focusBeforeDialog instanceof HTMLElement) focusBeforeDialog.focus();
-    }
-
-    const projectList = document.querySelector('.project-list');
-    if (projectList) {
-      projectList.addEventListener('click', event => {
-        if (event.target.closest('a')) return;
-        const button = event.target.closest('.case-study-trigger-btn');
-        const card = event.target.closest('.interactive-project-card');
-        const targetCard = button ? button.closest('.interactive-project-card') : card;
-        if (!targetCard) return;
-
-        const key = button?.dataset.caseStudy || targetCard.dataset.caseStudy;
-        if (!key) return;
-
-        event.preventDefault();
-        openCaseStudy(key);
-      });
-    }
-
-    modalCloseBtn.addEventListener('click', closeCaseStudy);
-    modalBackdrop.addEventListener('click', e => { if (e.target === modalBackdrop) closeCaseStudy(); });
-
-    document.addEventListener('keydown', e => {
-      const activeDialog = modalBackdrop.classList.contains('open')
-        ? modalBackdrop
-        : lightbox.classList.contains('open') ? lightbox : null;
-
-      if (e.key === 'Tab' && activeDialog) {
-        const focusable = getFocusableElements(activeDialog);
-        if (!focusable.length) return;
-        const first = focusable[0];
-        const last = focusable[focusable.length - 1];
-        if (e.shiftKey && document.activeElement === first) {
-          e.preventDefault();
-          last.focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
-          e.preventDefault();
-          first.focus();
-        }
-      }
-
-      if (e.key === 'Escape') {
-        closeDrawer(true);
-        closeLightbox();
-        closeCaseStudy();
-      }
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
-
 </html>
